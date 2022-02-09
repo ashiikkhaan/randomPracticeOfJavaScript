@@ -21,6 +21,30 @@
 var x = 10;
 var y = 5;
 var z = 15;
-if (y > x > z || z > x > y) {
-    console.log('x is middle');
+if ((y > x && x > z) || (z > x && x > y)) {
+    console.log('x is middle variable');
 }
+
+// compare string and number:
+function compare(a, b) {
+    if (a == b) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+const result = compare(15, "15");
+console.log(result);
+
+// another example
+function compare(c, d) {
+    if (c.toString() === d) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+const comparisionResult = compare(25, 25);
+console.log(comparisionResult);
